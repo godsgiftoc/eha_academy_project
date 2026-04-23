@@ -1449,3 +1449,17 @@ ModuleNotFoundError: No module named 'sales_pipeline.tasks'; 'sales_pipeline' is
 [2026-04-23T17:17:27.354+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:17:27.354+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-04-23T17:17:27.365+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:17:27.365+0000] {dag.py:3954} INFO - Setting next_dagrun for sales_pipeline to 2026-04-23 08:00:00+00:00, run_after=2026-04-24 08:00:00+00:00
 [2026-04-23T17:17:27.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.209 seconds
+[2026-04-23T17:17:57.540+0000] {processor.py:161} INFO - Started process (PID=4076) to work on /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:17:57.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2026-04-23T17:17:57.542+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:17:57.542+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:17:57.669+0000] {processor.py:840} INFO - DAG(s) 'sales_pipeline' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:17:57.679+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:17:57.679+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-04-23T17:17:57.686+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:17:57.686+0000] {dag.py:3954} INFO - Setting next_dagrun for sales_pipeline to 2026-04-23 08:00:00+00:00, run_after=2026-04-24 08:00:00+00:00
+[2026-04-23T17:17:57.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.159 seconds
+[2026-04-23T17:18:27.841+0000] {processor.py:161} INFO - Started process (PID=4136) to work on /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:18:27.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2026-04-23T17:18:27.844+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:18:27.843+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:18:28.023+0000] {processor.py:840} INFO - DAG(s) 'sales_pipeline' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2026-04-23T17:18:28.039+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:18:28.039+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-04-23T17:18:28.050+0000] {logging_mixin.py:188} INFO - [2026-04-23T17:18:28.050+0000] {dag.py:3954} INFO - Setting next_dagrun for sales_pipeline to 2026-04-23 08:00:00+00:00, run_after=2026-04-24 08:00:00+00:00
+[2026-04-23T17:18:28.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.223 seconds

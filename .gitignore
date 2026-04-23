@@ -1,4 +1,5 @@
 .claude
 
 # Ignore log files
-logs
+logs/*.log
+logs/
