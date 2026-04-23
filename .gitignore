@@ -1,5 +1,17 @@
 .claude
 
-# Ignore log files
-logs/*.log
+# Airflow runtime: task + scheduler logs
 logs/
+
+# Pipeline output (regenerated on every run)
+reports/
+
+# Generated source data (recreate with data/generate_sales.py)
+data/source.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Env / local overrides
+.env
