@@ -1,1 +1,4 @@
 .claude
+
+# Ignore log files
+logs
