@@ -1,0 +1,24 @@
+[2026-04-23T16:28:15.667+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-23T16:28:15.679+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sales_pipeline.aggregate_gold manual__2026-04-23T16:28:11+00:00 [queued]>
+[2026-04-23T16:28:15.681+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sales_pipeline.aggregate_gold manual__2026-04-23T16:28:11+00:00 [queued]>
+[2026-04-23T16:28:15.681+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-04-23T16:28:15.685+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): aggregate_gold> on 2026-04-23 16:28:11+00:00
+[2026-04-23T16:28:15.688+0000] {standard_task_runner.py:63} INFO - Started process 671 to run task
+[2026-04-23T16:28:15.689+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sales_pipeline', 'aggregate_gold', 'manual__2026-04-23T16:28:11+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/sales_pipeline.py', '--cfg-path', '/tmp/tmp2qfgu_lg']
+[2026-04-23T16:28:15.690+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask aggregate_gold
+[2026-04-23T16:28:15.709+0000] {task_command.py:426} INFO - Running <TaskInstance: sales_pipeline.aggregate_gold manual__2026-04-23T16:28:11+00:00 [running]> on host 6849090685f8
+[2026-04-23T16:28:15.744+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='eha-academy' AIRFLOW_CTX_DAG_ID='sales_pipeline' AIRFLOW_CTX_TASK_ID='aggregate_gold' AIRFLOW_CTX_EXECUTION_DATE='2026-04-23T16:28:11+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-23T16:28:11+00:00'
+[2026-04-23T16:28:15.745+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-23T16:28:15.765+0000] {tasks.py:72} INFO - Gold aggregate:
+ region  orders  units_sold   revenue  avg_order_value
+   East     406        4471 606785.49          1494.55
+Central     397        4353 548835.03          1382.46
+  North     396        4137 539124.54          1361.43
+   West     396        4185 527748.89          1332.70
+  South     385        3956 490773.41          1274.74
+[2026-04-23T16:28:15.778+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-04-23T16:28:15.779+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-23T16:28:15.785+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=sales_pipeline, task_id=aggregate_gold, execution_date=20260423T162811, start_date=20260423T162815, end_date=20260423T162815
+[2026-04-23T16:28:15.831+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-04-23T16:28:15.843+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-04-23T16:28:15.843+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,24 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "EHA Warehouse",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "warehouse",
+      "Username": "airflow",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    },
+    "2": {
+      "Name": "Airflow Metadata",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "airflow",
+      "Username": "airflow",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}

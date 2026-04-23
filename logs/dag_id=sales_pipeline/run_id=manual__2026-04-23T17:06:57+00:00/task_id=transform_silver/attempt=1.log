@@ -1,0 +1,18 @@
+[2026-04-23T17:06:59.711+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-04-23T17:06:59.723+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sales_pipeline.transform_silver manual__2026-04-23T17:06:57+00:00 [queued]>
+[2026-04-23T17:06:59.726+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sales_pipeline.transform_silver manual__2026-04-23T17:06:57+00:00 [queued]>
+[2026-04-23T17:06:59.726+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2026-04-23T17:06:59.731+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): transform_silver> on 2026-04-23 17:06:57+00:00
+[2026-04-23T17:06:59.735+0000] {standard_task_runner.py:63} INFO - Started process 2660 to run task
+[2026-04-23T17:06:59.736+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sales_pipeline', 'transform_silver', 'manual__2026-04-23T17:06:57+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/sales_pipeline.py', '--cfg-path', '/tmp/tmpqe9d12xj']
+[2026-04-23T17:06:59.737+0000] {standard_task_runner.py:91} INFO - Job 45: Subtask transform_silver
+[2026-04-23T17:06:59.761+0000] {task_command.py:426} INFO - Running <TaskInstance: sales_pipeline.transform_silver manual__2026-04-23T17:06:57+00:00 [running]> on host 340256e2fc4b
+[2026-04-23T17:06:59.804+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='eha-academy' AIRFLOW_CTX_DAG_ID='sales_pipeline' AIRFLOW_CTX_TASK_ID='transform_silver' AIRFLOW_CTX_EXECUTION_DATE='2026-04-23T17:06:57+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-23T17:06:57+00:00'
+[2026-04-23T17:06:59.804+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-04-23T17:06:59.815+0000] {tasks.py:112} INFO - No new rows; silver unchanged (total=1977)
+[2026-04-23T17:06:59.815+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-04-23T17:06:59.815+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-04-23T17:06:59.821+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=sales_pipeline, task_id=transform_silver, execution_date=20260423T170657, start_date=20260423T170659, end_date=20260423T170659
+[2026-04-23T17:06:59.836+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-04-23T17:06:59.847+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-04-23T17:06:59.848+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
